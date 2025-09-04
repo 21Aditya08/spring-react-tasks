@@ -1,0 +1,23 @@
+# Backend Dockerfile
+FROM openjdk:17-jdk-slim
+
+WORKDIR /app
+
+# Copy Maven wrapper and pom.xml
+COPY task-manager-backend/mvnw .
+COPY task-manager-backend/mvnw.cmd .
+COPY task-manager-backend/.mvn .mvn
+COPY task-manager-backend/pom.xml .
+
+# Download dependencies
+RUN ./mvnw dependency:go-offline -B
+
+# Copy source code
+COPY task-manager-backend/src src
+
+# Build the application
+RUN ./mvnw clean package -DskipTests
+
+# Run the application
+EXPOSE 8081
+CMD ["java", "-jar", "target/taskmanager-0.0.1-SNAPSHOT.jar"]

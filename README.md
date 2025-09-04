@@ -49,7 +49,19 @@ A modern, full-stack task management application built with **Spring Boot**, **M
 - **Node.js 16+**
 - **npm 8+**
 
-### Backend Setup
+### 🐳 Quick Start with Docker (Recommended)
+
+```bash
+git clone https://github.com/21Aditya08/spring-react-tasks.git
+cd spring-react-tasks
+docker-compose up -d
+```
+
+Access the application at:
+- Frontend: http://localhost:3000
+- Backend API: http://localhost:8081/api
+
+### 🛠️ Manual Setup
 
 1. **Clone the repository**
    ```bash

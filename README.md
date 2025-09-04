@@ -169,7 +169,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 Created with ❤️ by **Aditya**
 
 - GitHub: [@21Aditya08](https://github.com/21Aditya08)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
+- LinkedIn: [Aditya Sharma](www.linkedin.com/in/aditya-sharma-772299m)
 
 ---
 

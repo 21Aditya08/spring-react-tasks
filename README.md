@@ -53,8 +53,8 @@ A modern, full-stack task management application built with **Spring Boot**, **M
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/task-manager-fullstack.git
-   cd task-manager-fullstack/task-manager-backend
+   git clone https://github.com/21Aditya08/spring-react-tasks.git
+   cd spring-react-tasks/task-manager-backend
    ```
 
 2. **Configure MySQL Database**
@@ -166,9 +166,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Developer
 
-Created with ❤️ by **Your Name**
+Created with ❤️ by **Aditya**
 
-- GitHub: [@yourusername](https://github.com/yourusername)
+- GitHub: [@21Aditya08](https://github.com/21Aditya08)
 - LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
 
 ---

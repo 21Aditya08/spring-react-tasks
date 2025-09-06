@@ -9,6 +9,7 @@ public class TaskResponse {
     private String title;
     private String description;
     private TaskStatus status;
+    private Instant deadline;
     private Instant createdAt;
     private Instant updatedAt;
 
@@ -20,6 +21,8 @@ public class TaskResponse {
     public void setDescription(String description) { this.description = description; }
     public TaskStatus getStatus() { return status; }
     public void setStatus(TaskStatus status) { this.status = status; }
+    public Instant getDeadline() { return deadline; }
+    public void setDeadline(Instant deadline) { this.deadline = deadline; }
     public Instant getCreatedAt() { return createdAt; }
     public void setCreatedAt(Instant createdAt) { this.createdAt = createdAt; }
     public Instant getUpdatedAt() { return updatedAt; }

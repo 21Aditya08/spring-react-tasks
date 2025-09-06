@@ -16,7 +16,7 @@ public class Task {
     private Long id;
 
     @NotBlank
-    @Column(nullable = false)
+    @Column(nullable = false, unique = true)
     private String title;
 
     @Column(columnDefinition = "TEXT")
@@ -26,6 +26,9 @@ public class Task {
     @Enumerated(EnumType.STRING)
     @Column(nullable = false, length = 20)
     private TaskStatus status = TaskStatus.PENDING;
+
+    @Column(name = "deadline")
+    private Instant deadline;
 
     @CreationTimestamp
     @Column(nullable = false, updatable = false)
@@ -43,6 +46,8 @@ public class Task {
     public void setDescription(String description) { this.description = description; }
     public TaskStatus getStatus() { return status; }
     public void setStatus(TaskStatus status) { this.status = status; }
+    public Instant getDeadline() { return deadline; }
+    public void setDeadline(Instant deadline) { this.deadline = deadline; }
     public Instant getCreatedAt() { return createdAt; }
     public Instant getUpdatedAt() { return updatedAt; }
 }

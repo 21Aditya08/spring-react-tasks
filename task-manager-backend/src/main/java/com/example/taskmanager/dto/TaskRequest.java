@@ -10,6 +10,7 @@ public class TaskRequest {
     private String description;
     @NotNull
     private TaskStatus status;
+    private String deadline;
 
     public String getTitle() { return title; }
     public void setTitle(String title) { this.title = title; }
@@ -17,4 +18,6 @@ public class TaskRequest {
     public void setDescription(String description) { this.description = description; }
     public TaskStatus getStatus() { return status; }
     public void setStatus(TaskStatus status) { this.status = status; }
+    public String getDeadline() { return deadline; }
+    public void setDeadline(String deadline) { this.deadline = deadline; }
 }

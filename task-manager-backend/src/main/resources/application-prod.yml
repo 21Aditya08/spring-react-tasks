@@ -12,8 +12,5 @@ spring:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     show-sql: false
 
-  profiles:
-    active: prod
-
 cors:
-  allowed-origins: ${FRONTEND_URL:http://localhost:3000}
+  allowed-origins: ${FRONTEND_URL:https://your-frontend.onrender.com}
